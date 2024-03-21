@@ -4,11 +4,11 @@
   <img src="/src/img/portfolio_preview.png" alt="Preview">
 </p>
 
-## Sobre
+## About
 
 This portfolio was created with the aim of presenting my skills and experience as a programmer.
 
-## Tecnologias
+## Technologies
 
 Here are some of the technologies I used to develop this portfolio:
 
@@ -16,7 +16,7 @@ Here are some of the technologies I used to develop this portfolio:
 - Sass
 - Vite
 
-## Contacto
+## Contact
 
 If you would like to contact me to discuss collaboration opportunities, projects or just to say hello, you can do so:
 
