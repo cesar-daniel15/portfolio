@@ -1,0 +1,28 @@
+@use '../variables'
+@use '../mixins'
+
+#portfolio
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem
+    gap: 3rem
+
+    @include mixins.for-phone-only
+        padding: 2rem
+        gap: 1rem
+
+    h1
+        width: 100%
+        color: variables.$text-color
+        font-size: 5rem
+        margin-bottom: 4rem
+        background: variables.$text-color 
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+        @include mixins.for-phone-only
+            font-size: 3rem
+            text-align: center
+    
+        
+       

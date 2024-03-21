@@ -1,0 +1,54 @@
+@use '../variables'
+@use '../mixins' 
+    
+#information
+    @include mixins.center
+    flex-direction: column
+    background-color: variables.$bg-color-secondary
+    padding: 1rem
+    margin-bottom: 2rem
+    text-align: left
+    width: 80%
+    border-radius: variables.$card-border-radius
+
+    .stats-container
+        @include mixins.center
+        flex-direction: column
+        gap: 2rem
+        justify-content: start
+        width: 100%
+        flex-wrap: nowrap
+        
+        
+    .tech-stat
+        display: flex
+        width: 100%
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+    p
+        margin-top: 5px
+        margin-right: 1.5rem
+        color: variables.$text-color
+        font-weight: bold
+        display: flex
+
+        @include mixins.for-phone-only
+            font-size: small
+            font-weight: normal
+
+    .progress-bar
+        flex-grow: 1
+        height: 15px
+        background-color: variables.$text-color-secondary
+        border-radius: 0
+        overflow: hidden
+        border-color:  transparent
+        border-radius: 1rem
+
+    .progress-bar-fill
+        height: 100%
+        background: variables.$gradient
+        transition: width 0.3s ease  
+        border-radius: 1rem
+

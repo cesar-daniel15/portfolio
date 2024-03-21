@@ -1,0 +1,99 @@
+@use '../variables'
+@use '../mixins'
+    
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        @include mixins.for-phone-only
+            justify-content: center
+
+    .technology-card
+        @include mixins.center
+        gap: 1rem
+        padding: 1rem
+        border: 1px solid #333
+        width: 45%
+        border-radius: variables.$card-border-radius 
+
+        @include mixins.for-phone-only
+            min-height: 10rem
+        
+        @include mixins.for-tablet-portrait-up 
+            flex-direction: column
+
+            
+        h3
+            color: variables.$text-color
+            margin-bottom: 1rem
+
+            @include mixins.for-phone-only
+                display: none  
+
+            @include mixins.for-tablet-portrait-up 
+                font-size: small
+          
+
+        svg
+            font-size: 10rem
+
+            @include  mixins.for-phone-only
+                font-size: 5rem
+                align-self: center
+
+            @include mixins.for-tablet-portrait-up 
+                font-size: 5rem
+
+        p
+            @include mixins.for-phone-only
+                display: none
+            
+            @include mixins.for-tablet-portrait-up 
+                display: none
+
+    #html
+        svg
+            color: #E44D26
+
+    #css
+        svg
+            color: #1572B6
+
+    #js
+        svg
+            color: #F0DB4F
+
+    #php
+        svg
+            color: #7D91CE
+
+    #mysql
+        svg
+            color: #00618A
+
+    #react
+        svg
+            color: #61DAFB
+    #sass
+        svg 
+            color: #CE6B9C
+    #bootstrap
+        svg
+            color: #7518F5
+    #laravel
+        svg
+            color: #F03025
+    #git
+        svg 
+            color: #F15639
+    #database
+        svg
+            color: #959597
+    #python
+        svg
+            color: #FFD448
+        
